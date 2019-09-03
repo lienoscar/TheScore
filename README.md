@@ -19,6 +19,9 @@ Start server
 rails s
 ```
 
+* Launch a browser - Google Chrome is preferred
+* go to url - localhost:3000
+
 ## Built with
 * Frontend(HTML/CSS) - Bulma
 * Frontend(Javascript) - ReactJs
