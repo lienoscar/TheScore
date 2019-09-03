@@ -21,8 +21,5 @@ rails s
 
 ## Built with
 * Frontend(HTML/CSS) - Bulma
-* frontend(Javascript) - ReactJs
+* Frontend(Javascript) - ReactJs
 * Backend - Ruby on Rails
-
-
-
