@@ -7,14 +7,14 @@
 
 ## Installing
 
-Install gem
+Install gems
 ```
 bundle install
 ```
 
 ## Running
 
-Start server (development)
+Start server
 ```
 rails s
 ```
