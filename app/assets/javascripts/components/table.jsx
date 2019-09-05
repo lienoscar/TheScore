@@ -1,14 +1,15 @@
 function Table(props){
 
 	const [data, setData] = React.useState(props.data)
-	const [sortBy, setSortBy] = React.useState('')
-	const [sortOrder, setSortOrder] = React.useState('desc')
 
 	function sort(header){
 		if(['Yds', 'Lng', 'TD'].includes(header)){
+
+			let multi = header === props.sortBy ? props.sortOrder * -1 : 1
 			let dataSort = [...data]
-			dataSort.sort((a,b) => String(a[header]).replace(/[,T]/g, '') - String(b[header]).replace(/[,T]/, ''))
+			dataSort.sort((a,b) => multi * String(a[header]).replace(/[,T]/g, '') - multi * String(b[header]).replace(/[,T]/, ''))
 			setData(dataSort)
+			props.updateSortOrder(multi)
 			props.updateSortBy(header)
 		}
 	}
