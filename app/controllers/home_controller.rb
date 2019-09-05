@@ -6,6 +6,8 @@ class HomeController < ApplicationController
 	end
 
 	def export_csv
+		require 'csv'
+		
 		#sort data based on sortBy and filteredName
 		@nfl_data = JSON.parse(File.read([Rails.root, 'public/rushing.json'].join('/')))
 		
