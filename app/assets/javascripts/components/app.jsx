@@ -27,6 +27,7 @@ function App(props){
 
 			<CSVExportButton
 				sortBy={sortBy}
+				sortOrder={sortOrder}
 				filteredName={filteredName} 
 			/>
 
